@@ -7,37 +7,92 @@
 
 int main() {
     // Definição das variáveis para armazenar as propriedades das cidades
-    // Você pode utilizar o código do primeiro desafio
+     // Area para definicao das variaveis para armazenar as propriedades das cidades
+    // varáveia carta 1
+    char letra_estado1;
+    char numero_cidade1;
+    char nome_estado1[50];
+    char nome_cidade1[50];
+    int populacao_cidade1;
+    float area_cidade1;
+    float pib_cidade1;
+    int pontos_tur_cidade1;
 
-    
-    // Cadastro das Cartas:
-    // Implemente a lógica para solicitar ao usuário que insira os dados das cidades
-    // utilizando a função scanf para capturar as entradas.
-    // utilize o código do primeiro desafio
+    // variáveis carta 2
+    char letra_estado2;
+    char numero_cidade2;
+    char nome_estado2[50];
+    char nome_cidade2[50];
+    int populacao_cidade2;
+    float area_cidade2;
+    float pib_cidade2;
+    int pontos_tur_cidade2;
+    // Area para entrada de dados
+    printf("VAMOS CADASTRAR DUAS CARTAS PARA O JOGO\n");
 
-    // Exemplo:
-    // printf("Digite o código da cidade: ");
-    // scanf("%s", codigo);
-    // 
-    // (Repita para cada propriedade)
+    // CADASTRO DA CARTA 1
+    printf("DIGITE OS DADOS DA CARTA 1\n");
+    printf("Letra do Estado (A a H): ");
+    scanf(" %c", &letra_estado1);
+    printf("Numero da cidade (1 a 4): ");
+    scanf(" %c", &numero_cidade1);
+    printf("Mome do Estado: ");
+    scanf("%s", nome_estado1);
+    printf("Nome da cidade: ");
+    scanf("%s", nome_cidade1);
+    printf("Populacao da cidade: ");
+    scanf("%i", &populacao_cidade1);
+    printf("Area da cidade km2: ");
+    scanf("%f", &area_cidade1);
+    printf("PIB da cidade: ");
+    scanf("%f", &pib_cidade1);
+    printf("Numero de pontos turisticos da cidade: ");
+    scanf("%i", &pontos_tur_cidade1);
+    printf("******************************************\n");
+    //  CADASTRO DA CARTA 2
 
-    // Comparação de Cartas:
-    // Desenvolva a lógica de comparação entre duas cartas.
-    // Utilize estruturas de decisão como if, if-else para comparar atributos como população, área, PIB, etc.
+    printf("DIGITE OS DADOS DA CARTA 2\n");
+    printf("Letra do Estado (A a H): ");
+    scanf(" %c", &letra_estado2);
+    printf("Numero da cidade (1 a 4) ");
+    scanf(" %c", &numero_cidade2);
+    printf("Nome do Estado: ");
+    scanf("%s", nome_estado2);
+    printf("Nome da cidade: ");
+    scanf("%s", nome_cidade2);
+    printf("Populacao da cidade: ");
+    scanf("%i", &populacao_cidade2);
+    printf("Area da cidade km2: ");
+    scanf("%f", &area_cidade2);
+    printf("PIB da cidade: ");
+    scanf("%f", &pib_cidade2);
+    printf("Numero de pontos turisticos da cidade: ");
+    scanf("%i", &pontos_tur_cidade2);
+    printf("******************************************\n");
 
-    // Exemplo:
-    // if (populacaoA > populacaoB) {
-    //     printf("Cidade 1 tem maior população.\n");
-    // } else {
-    //     printf("Cidade 2 tem maior população.\n");
-    // }
-
-    // Exibição dos Resultados:
-    // Após realizar as comparações, exiba os resultados para o usuário.
-    // Certifique-se de que o sistema mostre claramente qual carta venceu e com base em qual atributo.
-
-    // Exemplo:
-    // printf("A cidade vencedora é: %s\n", cidadeVencedora);
-
+    // Area para exibicao dos dados da cidade
+    // exibicao da carta 1 cadastrada
+    printf("Carta num.: 1\n");
+    printf("Estado: %c\n", letra_estado1);
+    printf("Codigo: %c%c\n", letra_estado1, numero_cidade1);
+    printf("Nome do Estado: %s\n", nome_estado1);
+    printf("Nome da cidade: %s\n", nome_cidade1);
+    printf("Populacao: %i habitantes\n", populacao_cidade1);
+    printf("Area: %.0f km2\n", area_cidade1);
+    printf("PIB: %.2f milhoes de reais.\n", pib_cidade1 / 1000000);
+    printf("Num. de pontos turisticos: %i\n", pontos_tur_cidade1);
+    printf("******************************************\n");
+    //  exibicao da carta 2 cadastrada
+    printf("Carta num.: 2\n");
+    printf("Estado: %c\n", letra_estado2);
+    printf("Codigo: %c%c\n", letra_estado2, numero_cidade2);
+    printf("Nome do Estado: %s\n", nome_estado2);
+    printf("Nome da cidade: %s\n", nome_cidade2);
+    printf("Populacao: %i habitanes\n", populacao_cidade2);
+    printf("Area: %.0f km2\n", area_cidade2);
+    printf("PIB: %.2f milhoes de reais.\n", pib_cidade2 / 1000000);
+    printf("Num. de pontos turisticos: %i\n", pontos_tur_cidade2);
+    printf("****** F I M ******\n");
+    printf("******************************************\n");
     return 0;
 }
