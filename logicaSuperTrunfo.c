@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 int main()
 {
     // Area para definicao das variaveis para armazenar as propriedades das cidades
@@ -222,7 +223,6 @@ int main()
 
     default:
         printf("*******opcao invalida*******\n");
-        printf("opicao %d \n", &comparacao);
         break;
     }
     printf("****** F I M ******\n");
