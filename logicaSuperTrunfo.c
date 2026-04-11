@@ -234,12 +234,3 @@ int main()
     printf("******************************************\n");
     return 0;
 }
-
-    default:
-        printf("*******opcao invalida*******\n");
-        break;
-    }
-    printf("****** F I M ******\n");
-    printf("******************************************\n");
-    return 0;
-}
